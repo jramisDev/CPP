@@ -15,6 +15,12 @@ public:
 	// Sets default values for this actor's properties
 	ATestTemplateActor();
 
+	UFUNCTION(CallInEditor)
+	void DoTest();
+
+	UPROPERTY(EditAnywhere)
+	TArray<AActor*> ListOfActors;
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-CPP_2024.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\CPP_2024Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP_2024\CPP_2024.init.gen.cpp.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP_2024\CPP_2024Character.gen.cpp.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP_2024\CPP_2024GameMode.gen.cpp.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP_2024\CPP_2024.cpp.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP_2024\CPP_2024Character.cpp.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP_2024\CPP_2024GameMode.cpp.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP_2024\Default.rc2.res"
+/OUT:"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP_2024\UnrealEditor-CPP_2024.lib"

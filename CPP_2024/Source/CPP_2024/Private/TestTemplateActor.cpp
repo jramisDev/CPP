@@ -11,10 +11,16 @@ ATestTemplateActor::ATestTemplateActor()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
+void ATestTemplateActor::DoTest()
+{
+	uint32 SomeValue = 10;
+	UE_LOG(LogTemp, Display, TEXT("El valor es: %d"), SomeValue);
+}
+
 // Called when the game starts or when spawned
 void ATestTemplateActor::BeginPlay()
 {
-	Super::BeginPlay();
+	Super::BeginPlay(); 
 	
 }
 

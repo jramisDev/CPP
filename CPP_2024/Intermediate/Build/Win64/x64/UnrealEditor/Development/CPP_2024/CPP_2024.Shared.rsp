@@ -1,6 +1,8 @@
 /I "."
+/I "C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Source\CPP_2024\Private"
 /I "C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\UnrealEditor\Inc\CPP_2024\UHT"
 /I "C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Source"
+/I "C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Source\CPP_2024\Public"
 /I "Runtime\Core\Public"
 /I "Runtime\Core\Internal"
 /I "Runtime\TraceLog\Public"

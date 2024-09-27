@@ -1,0 +1,13 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/00_Clase/TemplateTesting/BP_TestTemplateActor.uasset",
+				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/8/XE/ZRYECTUA0Q68QYLBPHDJSO.uasset"
+			]
+		}
+	]
+}
