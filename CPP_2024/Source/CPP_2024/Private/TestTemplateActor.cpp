@@ -1,32 +1,43 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+﻿#include "CPP_2024/Public/TestTemplateActor.h"
 
+// template <typename T>
+// Attribute<T>::Attribute() : Value(0)
+// {
+// }
 
-#include "CPP_2024/Public/TestTemplateActor.h"
+template <typename T>
+Attribute<T>::Attribute(T InValue, FName InAttrName)
+{
+}
 
+template <typename T>
+T Attribute<T>::GetValue() const
+{
+	return Value;
+}
 
-// Sets default values
+template <typename T>
+void Attribute<T>::SetValue(T InValue)
+{
+	Value = InValue;
+}
+
+template<typename T, typename T2>
+T Sum(T ParamA, T2 ParamB)
+{
+	return ParamA + ParamB;
+}
+
 ATestTemplateActor::ATestTemplateActor()
 {
-	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
 
 void ATestTemplateActor::DoTest()
 {
-	uint32 SomeValue = 10;
-	UE_LOG(LogTemp, Display, TEXT("El valor es: %d"), SomeValue);
-}
+	Speed = Attribute<float>();
+	Speed.SetValue(1);
 
-// Called when the game starts or when spawned
-void ATestTemplateActor::BeginPlay()
-{
-	Super::BeginPlay(); 
 	
+	//UE_LOG(LogTemp, Display, TEXT("El valor es: %d"), SomeValue);
 }
-
-// Called every frame
-void ATestTemplateActor::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-}
-

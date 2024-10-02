@@ -1,10 +1,24 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
-
-#pragma once
+﻿#pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "TestTemplateActor.generated.h"
+
+
+template<typename T>
+class Attribute
+{
+public:
+	//Attribute();
+	Attribute(T InValue = 0, FName InAttrName = TEXT("NONE"));
+
+	T GetValue() const;
+	void SetValue(T InValue);
+
+private:
+	T Value;
+	FName AttrName;
+};
 
 UCLASS()
 class CPP_2024_API ATestTemplateActor : public AActor
@@ -12,7 +26,6 @@ class CPP_2024_API ATestTemplateActor : public AActor
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this actor's properties
 	ATestTemplateActor();
 
 	UFUNCTION(CallInEditor)
@@ -20,12 +33,16 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	TArray<AActor*> ListOfActors;
-	
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 
-public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	TArray<Attribute<float>> FloatAttributes;
 };
+
+template<typename T, typename T2>
+T Sum(T ParamA, T2 ParamB);
+
+
+template<typename T, typename TRet>
+TRet CastTo(T InTypeToCast)
+{
+	return(TRet)InTypeToCast;
+}
