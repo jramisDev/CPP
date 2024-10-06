@@ -15,6 +15,8 @@ public:
 	T GetValue() const;
 	void SetValue(T InValue);
 
+	const FName& GetAttrName() const { return AttrName; }
+
 private:
 	T Value;
 	FName AttrName;
@@ -34,7 +36,12 @@ public:
 	UPROPERTY(EditAnywhere)
 	TArray<AActor*> ListOfActors;
 
+	Attribute<float> SpeedAttribute;
+
 	TArray<Attribute<float>> FloatAttributes;
+
+	UFUNCTION(BlueprintCallable) void SetAttributeValue(const FName& InAttrName, float InValue);
+	UFUNCTION(BlueprintCallable) void GetAttributeValue(const FName& InAttrName, float& OutValue);
 };
 
 template<typename T, typename T2>
