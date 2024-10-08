@@ -9,7 +9,6 @@ template<typename T>
 class Attribute
 {
 public:
-	//Attribute();
 	Attribute(T InValue = 0, FName InAttrName = TEXT("NONE"));
 
 	T GetValue() const;
@@ -30,9 +29,6 @@ class CPP_2024_API ATestTemplateActor : public AActor
 public:
 	ATestTemplateActor();
 
-	UFUNCTION(CallInEditor)
-	void DoTest();
-
 	UPROPERTY(EditAnywhere)
 	TArray<AActor*> ListOfActors;
 
@@ -40,9 +36,14 @@ public:
 
 	TArray<Attribute<float>> FloatAttributes;
 
+	UPROPERTY(BlueprintCallable)
+	void DoTest();
+
+	UFUNCTION(BlueprintCallable) void CreateAttribute(const FName& InName, float InInitialValue);
 	UFUNCTION(BlueprintCallable) void SetAttributeValue(const FName& InAttrName, float InValue);
 	UFUNCTION(BlueprintCallable) void GetAttributeValue(const FName& InAttrName, float& OutValue);
 };
+
 
 template<typename T, typename T2>
 T Sum(T ParamA, T2 ParamB);

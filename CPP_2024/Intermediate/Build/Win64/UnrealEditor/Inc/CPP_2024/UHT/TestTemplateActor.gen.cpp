@@ -17,35 +17,55 @@ ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 UPackage* Z_Construct_UPackage__Script_CPP_2024();
 // End Cross Module References
 
-// Begin Class ATestTemplateActor Function DoTest
-struct Z_Construct_UFunction_ATestTemplateActor_DoTest_Statics
+// Begin Class ATestTemplateActor Function CreateAttribute
+struct Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics
 {
+	struct TestTemplateActor_eventCreateAttribute_Parms
+	{
+		FName InName;
+		float InInitialValue;
+	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "CallInEditor", "true" },
 		{ "ModuleRelativePath", "Public/TestTemplateActor.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InName_MetaData[] = {
+		{ "NativeConst", "" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FNamePropertyParams NewProp_InName;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_InInitialValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATestTemplateActor_DoTest_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATestTemplateActor, nullptr, "DoTest", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATestTemplateActor_DoTest_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATestTemplateActor_DoTest_Statics::Function_MetaDataParams) };
-UFunction* Z_Construct_UFunction_ATestTemplateActor_DoTest()
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::NewProp_InName = { "InName", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TestTemplateActor_eventCreateAttribute_Parms, InName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InName_MetaData), NewProp_InName_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::NewProp_InInitialValue = { "InInitialValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TestTemplateActor_eventCreateAttribute_Parms, InInitialValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::NewProp_InName,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::NewProp_InInitialValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATestTemplateActor, nullptr, "CreateAttribute", nullptr, nullptr, Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::PropPointers), sizeof(Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::TestTemplateActor_eventCreateAttribute_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::TestTemplateActor_eventCreateAttribute_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ATestTemplateActor_CreateAttribute()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATestTemplateActor_DoTest_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATestTemplateActor_CreateAttribute_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(ATestTemplateActor::execDoTest)
+DEFINE_FUNCTION(ATestTemplateActor::execCreateAttribute)
 {
+	P_GET_PROPERTY_REF(FNameProperty,Z_Param_Out_InName);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_InInitialValue);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->DoTest();
+	P_THIS->CreateAttribute(Z_Param_Out_InName,Z_Param_InInitialValue);
 	P_NATIVE_END;
 }
-// End Class ATestTemplateActor Function DoTest
+// End Class ATestTemplateActor Function CreateAttribute
 
 // Begin Class ATestTemplateActor Function GetAttributeValue
 struct Z_Construct_UFunction_ATestTemplateActor_GetAttributeValue_Statics
@@ -152,7 +172,7 @@ void ATestTemplateActor::StaticRegisterNativesATestTemplateActor()
 {
 	UClass* Class = ATestTemplateActor::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
-		{ "DoTest", &ATestTemplateActor::execDoTest },
+		{ "CreateAttribute", &ATestTemplateActor::execCreateAttribute },
 		{ "GetAttributeValue", &ATestTemplateActor::execGetAttributeValue },
 		{ "SetAttributeValue", &ATestTemplateActor::execSetAttributeValue },
 	};
@@ -180,7 +200,7 @@ struct Z_Construct_UClass_ATestTemplateActor_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ATestTemplateActor_DoTest, "DoTest" }, // 3518860719
+		{ &Z_Construct_UFunction_ATestTemplateActor_CreateAttribute, "CreateAttribute" }, // 316587270
 		{ &Z_Construct_UFunction_ATestTemplateActor_GetAttributeValue, "GetAttributeValue" }, // 1858565262
 		{ &Z_Construct_UFunction_ATestTemplateActor_SetAttributeValue, "SetAttributeValue" }, // 226718788
 	};
@@ -237,10 +257,10 @@ ATestTemplateActor::~ATestTemplateActor() {}
 struct Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATestTemplateActor, ATestTemplateActor::StaticClass, TEXT("ATestTemplateActor"), &Z_Registration_Info_UClass_ATestTemplateActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATestTemplateActor), 4258174991U) },
+		{ Z_Construct_UClass_ATestTemplateActor, ATestTemplateActor::StaticClass, TEXT("ATestTemplateActor"), &Z_Registration_Info_UClass_ATestTemplateActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATestTemplateActor), 3727041203U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_3851683896(TEXT("/Script/CPP_2024"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_2971324524(TEXT("/Script/CPP_2024"),
 	Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
