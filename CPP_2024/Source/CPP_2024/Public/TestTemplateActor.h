@@ -21,6 +21,12 @@ private:
 	FName AttrName;
 };
 
+template<int N>
+class TArrayExample
+{
+	int Val = N;
+};
+
 UCLASS()
 class CPP_2024_API ATestTemplateActor : public AActor
 {
@@ -29,16 +35,16 @@ class CPP_2024_API ATestTemplateActor : public AActor
 public:
 	ATestTemplateActor();
 
+	UFUNCTION(CallInEditor)
+	void DoTest();
+
 	UPROPERTY(EditAnywhere)
 	TArray<AActor*> ListOfActors;
 
 	Attribute<float> SpeedAttribute;
 
 	TArray<Attribute<float>> FloatAttributes;
-
-	UPROPERTY(BlueprintCallable)
-	void DoTest();
-
+	
 	UFUNCTION(BlueprintCallable) void CreateAttribute(const FName& InName, float InInitialValue);
 	UFUNCTION(BlueprintCallable) void SetAttributeValue(const FName& InAttrName, float InValue);
 	UFUNCTION(BlueprintCallable) void GetAttributeValue(const FName& InAttrName, float& OutValue);
