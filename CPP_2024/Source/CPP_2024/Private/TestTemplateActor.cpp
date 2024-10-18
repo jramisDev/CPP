@@ -1,5 +1,8 @@
 ﻿#include "CPP_2024/Public/TestTemplateActor.h"
 
+#include "IndexTypes.h"
+#include "Windows/AllowWindowsPlatformTypes.h"
+
 template <typename T>
 Attribute<T>::Attribute(T InValue, FName InAttrName)// : Value(InValue), AttrName(InAttrName)
 {
@@ -28,22 +31,81 @@ T Sum(T ParamA, T2 ParamB)
 ATestTemplateActor::ATestTemplateActor()
 {
 	PrimaryActorTick.bCanEverTick = true;
+
+	int Value = 10;
 	
 }
 
 template<typename T, int N>
 class TAllocExample
 {
+	
+	
 public:
+
 	TAllocExample()
 	{
-		Data = new T[10];
+		Data = new T[N];
 		Size = N;
 	}
+
+	TAllocExample(T InitialValue) : TAllocExample() 
+	{
+
+		for (SIZE_T i = 0; i < Size; ++i)
+		{
+			Data[i] = InitialValue;
+		}
+		
+	} 
 	
 	~TAllocExample()
 	{
 		delete[] Data;
+	}
+
+	void AddElement(const T& InValue, SIZE_T Index)
+	{
+		check(Index <= (Size-1) && Index >= 0)		
+		*(Data + Index) = InValue;
+	}
+
+	T& GetElement(SIZE_T Index) const
+	{
+		check(Index <= (Size-1) && Index >= 0)		
+		return *(Data + Index);
+	}
+
+	T& operator[](SIZE_T Index)
+	{
+		check(Index <= (Size-1) && Index >= 0)		
+		return *(Data + Index);
+	}
+
+	T& operator[](SIZE_T Index) const
+	{
+		check(Index <= (Size-1) && Index >= 0)		
+		return *(Data + Index);
+	}
+
+	bool operator==(const TAllocExample<T, N>& rhs) const
+	{
+		for (SIZE_T i = 0; i < Size; ++i)
+		{
+			if (Data[i] != rhs[i])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+	void operator+=(const TAllocExample& rhs)
+	{
+		for (SIZE_T i = 0; i < Size; ++i)
+		{
+			Data[i] += rhs[i];
+		}
 	}
 	
 private:
@@ -78,14 +140,28 @@ void ATestTemplateActor::DoTest()
 	// c-> 10
 	// d-> 22
 
-	TAllocExample<int, 10> IntArr;
-	IntArr[12];
-	
 	//for(int i = 0; i < 10; ++i) no es correcto el uso del int por los diferentes procesadores.
 	// for(SIZE_T i = 0; i < 10; ++i)
 	// {
 	// 	
 	// }
+
+	TAllocExample<int, 10> ListOfInts;
+	ListOfInts.AddElement(20,3);
+	int& a = ListOfInts.GetElement(0);
+
+	ListOfInts[0] = 10;
+
+	TAllocExample<int, 10> AnotherListOfInts;
+	
+	if (AnotherListOfInts == ListOfInts)
+	{
+		
+	}
+	
+	TAllocExample<FString, 10> ListOfString;
+	TAllocExample<FString, 10> ListOfString2;
+	ListOfString += ListOfString2;
 	
 }
 

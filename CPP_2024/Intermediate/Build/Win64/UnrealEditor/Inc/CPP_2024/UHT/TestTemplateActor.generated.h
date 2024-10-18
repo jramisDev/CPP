@@ -14,13 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CPP_2024_TestTemplateActor_generated_h
 
-#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetAttributeValue); \
 	DECLARE_FUNCTION(execSetAttributeValue); \
-	DECLARE_FUNCTION(execCreateAttribute);
+	DECLARE_FUNCTION(execCreateAttribute); \
+	DECLARE_FUNCTION(execDoTest);
 
 
-#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_27_INCLASS_NO_PURE_DECLS \
+#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_33_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATestTemplateActor(); \
 	friend struct Z_Construct_UClass_ATestTemplateActor_Statics; \
@@ -29,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ATestTemplateActor)
 
 
-#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_27_ENHANCED_CONSTRUCTORS \
+#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_33_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ATestTemplateActor(ATestTemplateActor&&); \
@@ -41,13 +42,13 @@ public: \
 	NO_API virtual ~ATestTemplateActor();
 
 
-#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_24_PROLOG
-#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_27_GENERATED_BODY \
+#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_30_PROLOG
+#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_33_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_27_INCLASS_NO_PURE_DECLS \
-	FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_27_ENHANCED_CONSTRUCTORS \
+	FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_33_INCLASS_NO_PURE_DECLS \
+	FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_TestTemplateActor_h_33_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
