@@ -271,9 +271,11 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\CPP_2024\CPP_2024GameMode.h"/>
+    <ClCompile Include="..\..\Source\CPP_2024\Private\StackActor.cpp" />
     <ClCompile Include="..\..\Source\CPP_2024\Private\TestTemplateActor.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClInclude Include="..\..\Source\CPP_2024\Private\StackActor.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\TestTemplateActor.h"/>
   </ItemGroup>
   <PropertyGroup>

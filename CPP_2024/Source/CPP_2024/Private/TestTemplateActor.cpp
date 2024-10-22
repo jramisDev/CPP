@@ -76,13 +76,12 @@ public:
 		return *(Data + Index);
 	}
 
-	T& operator[](SIZE_T Index)
+	T& operator[](SIZE_T Index) const
 	{
-		check(Index <= (Size-1) && Index >= 0)		
-		return *(Data + Index);
+		return const_cast<TAllocExample<T, N>>(this)[Index];
 	}
 
-	T& operator[](SIZE_T Index) const
+	T& operator[](SIZE_T Index)
 	{
 		check(Index <= (Size-1) && Index >= 0)		
 		return *(Data + Index);
@@ -106,6 +105,11 @@ public:
 		{
 			Data[i] += rhs[i];
 		}
+	}
+
+	const T* operator*() const
+	{
+		return Data;
 	}
 	
 private:
@@ -162,6 +166,9 @@ void ATestTemplateActor::DoTest()
 	TAllocExample<FString, 10> ListOfString;
 	TAllocExample<FString, 10> ListOfString2;
 	ListOfString += ListOfString2;
+
+	FString SomeString = TEXT("BLABLA");
+	const TCHAR* CharArr = *SomeString;
 	
 }
 
