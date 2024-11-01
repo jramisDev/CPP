@@ -78,7 +78,9 @@ public:
 
 	T& operator[](SIZE_T Index) const
 	{
-		return const_cast<TAllocExample<T, N>>(this)[Index];
+		//return const_cast<TAllocExample<T, N>>(this)[Index];
+		check(Index <= (Size-1) && Index >= 0)		
+		return *(Data + Index);
 	}
 
 	T& operator[](SIZE_T Index)

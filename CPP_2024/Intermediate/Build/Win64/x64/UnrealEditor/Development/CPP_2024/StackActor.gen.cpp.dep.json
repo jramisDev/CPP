@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp_2024\\uht\\stackactor.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\x64\\cpp_2024editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp_2024\\definitions.cpp_2024.h",
+            "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\source\\cpp_2024\\private\\stackactor.h",
+            "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp_2024\\uht\\stackactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
