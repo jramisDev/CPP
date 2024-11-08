@@ -1,7 +1,5 @@
 ﻿#include "Subsystems/SingletonTesting.h"
 
-FGameplayLogger* FGameplayLogger::Singleton = nullptr;
-
 ASingletonTesting::ASingletonTesting()
 {
 	PrimaryActorTick.bCanEverTick = true;

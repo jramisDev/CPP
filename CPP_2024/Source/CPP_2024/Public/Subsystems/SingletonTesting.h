@@ -77,11 +77,11 @@ public:
 	
 
 private:
-	FGameplayLogger();
-	~FGameplayLogger()
+	FGameplayLogger()
 	{
-		delete Singleton;
-	};
+	}
+
+	~FGameplayLogger();
 
 	// Esta funcion se dispara automaticamente cada 2s
 	// ciertos sistemas disparan esta función cuando consideren

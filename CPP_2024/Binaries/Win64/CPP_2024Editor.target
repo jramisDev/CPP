@@ -3648,6 +3648,34 @@
 		{
 			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubsystemBrowserPlugin/Binaries/Win64/UnrealEditor-SubsystemBrowser.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubsystemBrowserPlugin/Binaries/Win64/UnrealEditor-SubsystemBrowser.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubsystemBrowserPlugin/Binaries/Win64/UnrealEditor-SubsystemBrowserTests.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubsystemBrowserPlugin/Binaries/Win64/UnrealEditor-SubsystemBrowserTests.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubsystemBrowserPlugin/Binaries/Win64/UnrealEditor-SubsystemSettingsEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubsystemBrowserPlugin/Binaries/Win64/UnrealEditor-SubsystemSettingsEditor.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubsystemBrowserPlugin/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
 		}
 	],
 	"RuntimeDependencies": [
@@ -26686,6 +26714,10 @@
 		{
 			"Path": "$(ProjectDir)/CPP_2024.uproject",
 			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SubsystemBrowserPlugin/SubsystemBrowserPlugin.uplugin",
+			"Type": "UFS"
 		}
 	],
 	"BuildPlugins": [
@@ -26837,6 +26869,7 @@
 		"SpeedTreeImporter",
 		"StructUtils",
 		"StudioTelemetry",
+		"SubsystemBrowserPlugin",
 		"SubversionSourceControl",
 		"Synthesis",
 		"Takes",
