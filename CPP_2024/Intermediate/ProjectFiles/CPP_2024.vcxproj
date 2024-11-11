@@ -274,6 +274,7 @@
     <ClCompile Include="..\..\Source\CPP_2024\Private\GeneralTesting.cpp" />
     <ClCompile Include="..\..\Source\CPP_2024\Private\Spawner.cpp" />
     <ClCompile Include="..\..\Source\CPP_2024\Private\StackActor.cpp" />
+    <ClCompile Include="..\..\Source\CPP_2024\Private\Subsystems\AttributeSubsystem.cpp" />
     <ClCompile Include="..\..\Source\CPP_2024\Private\Subsystems\GI_Game.cpp" />
     <ClCompile Include="..\..\Source\CPP_2024\Private\Subsystems\SingletonTesting.cpp" />
     <ClCompile Include="..\..\Source\CPP_2024\Private\Subsystems\TestingSubsystem.cpp" />
@@ -283,6 +284,7 @@
     <ClInclude Include="..\..\Source\CPP_2024\Private\StackActor.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\GeneralTesting.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\Spawner.h" />
+    <ClInclude Include="..\..\Source\CPP_2024\Public\Subsystems\AttributeSubsystem.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\Subsystems\GI_Game.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\Subsystems\SingletonTesting.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\Subsystems\TestingSubsystem.h" />

@@ -10,8 +10,5 @@ class CPP_2024_API UGI_Game : public UGameInstance
 	GENERATED_BODY()
 
 public:
-
-	virtual void Init() override;
-
-	
+	virtual void Init() override;	
 };

@@ -13,5 +13,24 @@ void UTestingSubsystem::Deinitialize()
 
 bool UTestingSubsystem::ShouldCreateSubsystem(UObject* Outer) const
 {
-	return !Outer->GetWorld()->IsEditorWorld();
+	return true;
+}
+
+void UTestingSubsystem::AddPendingMsg(const FText& InMsg)
+{
+	PendingMessages.Enqueue(InMsg);
+}
+
+void UTestingSubsystem::PublishNextMsg()
+{
+	FText Msg;
+	if(PendingMessages.Dequeue(Msg))
+	{
+		//Publico el mensaje
+		GEngine->AddOnScreenDebugMessage(INDEX_NONE, 2.f, FColor::Cyan, Msg.ToString());
+	}
+}
+
+void UTestingSubsystem::DoSomeThing()
+{
 }
