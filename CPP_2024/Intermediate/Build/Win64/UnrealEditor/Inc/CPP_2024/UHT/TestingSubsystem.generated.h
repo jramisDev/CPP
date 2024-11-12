@@ -14,12 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CPP_2024_TestingSubsystem_generated_h
 
+#define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_TestingSubsystem_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execDoSomeThing); \
+	DECLARE_FUNCTION(execPublishNextMsg); \
+	DECLARE_FUNCTION(execAddPendingMsg);
+
+
 #define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_TestingSubsystem_h_10_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTestingSubsystem(); \
 	friend struct Z_Construct_UClass_UTestingSubsystem_Statics; \
 public: \
-	DECLARE_CLASS(UTestingSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/CPP_2024"), NO_API) \
+	DECLARE_CLASS(UTestingSubsystem, UWorldSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/CPP_2024"), NO_API) \
 	DECLARE_SERIALIZER(UTestingSubsystem)
 
 
@@ -41,6 +47,7 @@ public: \
 #define FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_TestingSubsystem_h_10_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_TestingSubsystem_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_TestingSubsystem_h_10_INCLASS_NO_PURE_DECLS \
 	FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_TestingSubsystem_h_10_ENHANCED_CONSTRUCTORS \
 private: \

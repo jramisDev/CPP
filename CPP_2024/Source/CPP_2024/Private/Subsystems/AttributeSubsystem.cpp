@@ -2,6 +2,31 @@
 
 #include "Kismet/GameplayStatics.h"
 
+void UAttributeSubsystem::GetActorWithAttributes(TArray<AActor*>& OutActors)
+{
+	OutActors = RegisterAttrOwners;
+}
+
+void UAttributeSubsystem::ModifyAttributeFromActor(AActor* InActor, const FName& InAttrName, float InValue)
+{
+	for (auto* Actor : RegisterAttrOwners)
+	{
+		if(Actor == InActor)
+		{
+			//GetAttributeComponentFromActor(InActor);
+			OnAttributeChange.Broadcast(InActor, InAttrName);
+		}
+	}
+}
+
+void UAttributeSubsystem::AddAttrToActor(AActor* InActor)
+{
+	if (!InActor) return;
+	
+	InActor->AddComponentByClass(UAttributeComponent::StaticClass(),  false, FTransform(), false);
+	RegisterNewActor(InActor);
+}
+
 void UAttributeSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	Super::Initialize(Collection);
@@ -46,5 +71,13 @@ void UAttributeSubsystem::GetAllAttributesOwners(TArray<AActor*>& AttrOwners)
 
 void UAttributeSubsystem::RegisterNewActor(AActor* InNewActor)
 {
-	RegisterAttrOwners.Add(InNewActor);
+	if(GetAttributeComponentFromActor(InNewActor))
+	{
+		RegisterAttrOwners.Add(InNewActor);		
+	}
+}
+
+UAttributeComponent* UAttributeSubsystem::GetAttributeComponentFromActor(const AActor* InActor)
+{
+	return InActor->FindComponentByClass<UAttributeComponent>();
 }
