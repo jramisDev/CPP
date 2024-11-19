@@ -394,15 +394,15 @@ struct Z_Construct_UClass_UCustomActionSubsystem_Statics
 		{ "IncludePath", "Subsystems/ActionSystem/CustomActionSubsystem.h" },
 		{ "ModuleRelativePath", "Public/Subsystems/ActionSystem/CustomActionSubsystem.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnabledActor_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnabledActors_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Subsystems/ActionSystem/CustomActionSubsystem.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnActionPerformed_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Subsystems/ActionSystem/CustomActionSubsystem.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnabledActor_Inner;
-	static const UECodeGen_Private::FArrayPropertyParams NewProp_EnabledActor;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnabledActors_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_EnabledActors;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnActionPerformed;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -420,12 +420,12 @@ struct Z_Construct_UClass_UCustomActionSubsystem_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_EnabledActor_Inner = { "EnabledActor", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_EnabledActor = { "EnabledActor", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCustomActionSubsystem, EnabledActor), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnabledActor_MetaData), NewProp_EnabledActor_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_EnabledActors_Inner = { "EnabledActors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_EnabledActors = { "EnabledActors", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCustomActionSubsystem, EnabledActors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnabledActors_MetaData), NewProp_EnabledActors_MetaData) };
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_OnActionPerformed = { "OnActionPerformed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCustomActionSubsystem, OnActionPerformed), Z_Construct_UDelegateFunction_CPP_2024_OnActionPerformed__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnActionPerformed_MetaData), NewProp_OnActionPerformed_MetaData) }; // 2916607208
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCustomActionSubsystem_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_EnabledActor_Inner,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_EnabledActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_EnabledActors_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_EnabledActors,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCustomActionSubsystem_Statics::NewProp_OnActionPerformed,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UCustomActionSubsystem_Statics::PropPointers) < 2048);
@@ -470,10 +470,10 @@ UCustomActionSubsystem::~UCustomActionSubsystem() {}
 struct Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCustomActionSubsystem, UCustomActionSubsystem::StaticClass, TEXT("UCustomActionSubsystem"), &Z_Registration_Info_UClass_UCustomActionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomActionSubsystem), 2998052213U) },
+		{ Z_Construct_UClass_UCustomActionSubsystem, UCustomActionSubsystem::StaticClass, TEXT("UCustomActionSubsystem"), &Z_Registration_Info_UClass_UCustomActionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomActionSubsystem), 932533766U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_2918208135(TEXT("/Script/CPP_2024"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_3560523409(TEXT("/Script/CPP_2024"),
 	Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

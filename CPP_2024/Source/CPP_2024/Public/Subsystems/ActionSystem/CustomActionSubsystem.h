@@ -15,7 +15,7 @@ class CPP_2024_API UCustomActionSubsystem : public UWorldSubsystem
 	GENERATED_BODY()
 
 protected:
-
+	
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 	virtual void Deinitialize() override;
 
@@ -49,7 +49,7 @@ private:
 	UCustomActionComponent* GetCustomActionComponent(AActor* InActor) const;
 
 	UPROPERTY()
-	TArray<AActor*> EnabledActor;
+	TArray<AActor*> EnabledActors;
 
 #if WITH_EDITOR
 	void ShowDebugInfo();

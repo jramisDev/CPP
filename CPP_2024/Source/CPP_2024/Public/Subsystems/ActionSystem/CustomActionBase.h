@@ -4,17 +4,19 @@
 #include "UObject/Object.h"
 #include "CustomActionBase.generated.h"
 
+class UCustomActionComponent;
+
 UCLASS(Blueprintable, BlueprintType)
 class CPP_2024_API UCustomActionBase : public UObject
 {
 	GENERATED_BODY()
 
+	friend UCustomActionComponent;
+
 protected:
 
-	UFUNCTION(BlueprintNativeEvent)
-	void DoAction();
-	virtual void DoAction_Implementation();
+	virtual void DoAction(AActor* ActionInstigator);
 
 	UFUNCTION(BlueprintImplementableEvent)
-	void DoAction_Event();
+	void RecieveDoAction(AActor* ActionInstigator);
 };

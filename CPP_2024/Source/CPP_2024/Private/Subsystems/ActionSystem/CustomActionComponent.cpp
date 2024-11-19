@@ -1,5 +1,7 @@
 ﻿#include "Subsystems/ActionSystem/CustomActionComponent.h"
 
+#include "Subsystems/ActionSystem/CustomActionBase.h"
+
 UCustomActionComponent::UCustomActionComponent()
 {
 	PrimaryComponentTick.bCanEverTick = true;
@@ -10,9 +12,12 @@ void UCustomActionComponent::BeginPlay()
 	Super::BeginPlay();
 }
 
-void UCustomActionComponent::TickComponent(float DeltaTime, ELevelTick TickType,
-                                           FActorComponentTickFunction* ThisTickFunction)
+void UCustomActionComponent::DoAction(const TSubclassOf<UCustomActionBase>& ActionClass) const
 {
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	if(Actions.Contains(ActionClass))
+	{
+		ActionClass->GetDefaultObject<UCustomActionBase>()->DoAction(GetOwner());
+	}
 }
 

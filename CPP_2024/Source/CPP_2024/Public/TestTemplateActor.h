@@ -21,11 +21,7 @@ private:
 	FName AttrName;
 };
 
-template<int N>
-class TArrayExample
-{
-	int Val = N;
-};
+
 
 UCLASS()
 class CPP_2024_API ATestTemplateActor : public AActor
