@@ -29,8 +29,11 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void DoActionSequence(AActor* InActor, const TArray<TSubclassOf<UCustomActionBase>>& InCustomActionBaseSequence);
 
+	// UFUNCTION(BlueprintCallable)
+	// void DoActionAndWait(AActor* InActor, const TArray<>);
+	
 	UFUNCTION(BlueprintCallable)
-	void StopCurrentAction(AActor* InActor, const TSubclassOf<UCustomActionBase>& InCustomActionBase);
+	void StopCurrentAction(AActor* InActor);
 
 	UFUNCTION(BlueprintCallable)
 	void AddActionToActor(AActor* InActor, const TSubclassOf<UCustomActionBase>& InNewCustomActionBase);

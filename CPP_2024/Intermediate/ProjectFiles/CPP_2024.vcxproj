@@ -272,6 +272,7 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\CPP_2024\CPP_2024GameMode.h"/>
     <ClCompile Include="..\..\Source\CPP_2024\Private\GeneralTesting.cpp" />
+    <ClCompile Include="..\..\Source\CPP_2024\Private\Predicates\PredicateActor.cpp" />
     <ClCompile Include="..\..\Source\CPP_2024\Private\Spawner.cpp" />
     <ClCompile Include="..\..\Source\CPP_2024\Private\StackActor.cpp" />
     <ClCompile Include="..\..\Source\CPP_2024\Private\Subsystems\ActionSystem\CustomActionBase.cpp" />
@@ -286,6 +287,7 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\CPP_2024\Private\StackActor.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\GeneralTesting.h" />
+    <ClInclude Include="..\..\Source\CPP_2024\Public\Predicates\PredicateActor.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\Spawner.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\Subsystems\ActionSystem\CustomActionBase.h" />
     <ClInclude Include="..\..\Source\CPP_2024\Public\Subsystems\ActionSystem\CustomActionComponent.h" />

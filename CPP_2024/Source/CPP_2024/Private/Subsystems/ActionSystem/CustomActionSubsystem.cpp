@@ -49,19 +49,28 @@ void UCustomActionSubsystem::DoActionSequence(AActor* InActor,
 {
 }
 
-void UCustomActionSubsystem::StopCurrentAction(AActor* InActor,
-	const TSubclassOf<UCustomActionBase>& InCustomActionBase)
+void UCustomActionSubsystem::StopCurrentAction(AActor* InActor)
 {
+	if(UCustomActionComponent* Comp = GetCustomActionComponent(InActor))
+	{
+		Comp->StopAction();
+	}
 }
 
-void UCustomActionSubsystem::AddActionToActor(AActor* InActor,
-	const TSubclassOf<UCustomActionBase>& InNewCustomActionBase)
+void UCustomActionSubsystem::AddActionToActor(AActor* InActor, const TSubclassOf<UCustomActionBase>& InNewCustomActionBase)
 {
+	if(UCustomActionComponent* Comp = GetCustomActionComponent(InActor))
+	{
+		Comp->Actions.Add(InNewCustomActionBase);
+	}
 }
 
-void UCustomActionSubsystem::RemoveActionFromActor(AActor* InActor,
-	const TSubclassOf<UCustomActionBase>& InNewCustomActionBase)
+void UCustomActionSubsystem::RemoveActionFromActor(AActor* InActor, const TSubclassOf<UCustomActionBase>& InNewCustomActionBase)
 {
+	if(UCustomActionComponent* Comp = GetCustomActionComponent(InActor))
+	{
+		Comp->Actions.Add(InNewCustomActionBase);
+	}
 }
 
 void UCustomActionSubsystem::ExecuteMassiveAction(const TSubclassOf<UCustomActionBase>& InCustomActionBase)

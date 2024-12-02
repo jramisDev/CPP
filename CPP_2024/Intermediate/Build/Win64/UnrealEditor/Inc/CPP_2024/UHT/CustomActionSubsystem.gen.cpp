@@ -324,29 +324,22 @@ struct Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics
 	struct CustomActionSubsystem_eventStopCurrentAction_Parms
 	{
 		AActor* InActor;
-		const TSubclassOf<UCustomActionBase> InCustomActionBase;
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/Subsystems/ActionSystem/CustomActionSubsystem.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InCustomActionBase_MetaData[] = {
-		{ "NativeConst", "" },
-	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InActor;
-	static const UECodeGen_Private::FClassPropertyParams NewProp_InCustomActionBase;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::NewProp_InActor = { "InActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CustomActionSubsystem_eventStopCurrentAction_Parms, InActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::NewProp_InCustomActionBase = { "InCustomActionBase", nullptr, (EPropertyFlags)0x0014000008000182, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CustomActionSubsystem_eventStopCurrentAction_Parms, InCustomActionBase), Z_Construct_UClass_UClass, Z_Construct_UClass_UCustomActionBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InCustomActionBase_MetaData), NewProp_InCustomActionBase_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::NewProp_InActor,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::NewProp_InCustomActionBase,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCustomActionSubsystem, nullptr, "StopCurrentAction", nullptr, nullptr, Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::PropPointers), sizeof(Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::CustomActionSubsystem_eventStopCurrentAction_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::Function_MetaDataParams), Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCustomActionSubsystem, nullptr, "StopCurrentAction", nullptr, nullptr, Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::PropPointers), sizeof(Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::CustomActionSubsystem_eventStopCurrentAction_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::Function_MetaDataParams), Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics::CustomActionSubsystem_eventStopCurrentAction_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction()
 {
@@ -360,10 +353,9 @@ UFunction* Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction()
 DEFINE_FUNCTION(UCustomActionSubsystem::execStopCurrentAction)
 {
 	P_GET_OBJECT(AActor,Z_Param_InActor);
-	P_GET_OBJECT_REF_NO_PTR(TSubclassOf<UCustomActionBase>,Z_Param_Out_InCustomActionBase);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->StopCurrentAction(Z_Param_InActor,Z_Param_Out_InCustomActionBase);
+	P_THIS->StopCurrentAction(Z_Param_InActor);
 	P_NATIVE_END;
 }
 // End Class UCustomActionSubsystem Function StopCurrentAction
@@ -412,7 +404,7 @@ struct Z_Construct_UClass_UCustomActionSubsystem_Statics
 		{ &Z_Construct_UFunction_UCustomActionSubsystem_DoActionSequence, "DoActionSequence" }, // 3039458286
 		{ &Z_Construct_UFunction_UCustomActionSubsystem_ExecuteMassiveAction, "ExecuteMassiveAction" }, // 1999606603
 		{ &Z_Construct_UFunction_UCustomActionSubsystem_RemoveActionFromActor, "RemoveActionFromActor" }, // 1034537848
-		{ &Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction, "StopCurrentAction" }, // 1195507303
+		{ &Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction, "StopCurrentAction" }, // 528148803
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -470,10 +462,10 @@ UCustomActionSubsystem::~UCustomActionSubsystem() {}
 struct Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCustomActionSubsystem, UCustomActionSubsystem::StaticClass, TEXT("UCustomActionSubsystem"), &Z_Registration_Info_UClass_UCustomActionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomActionSubsystem), 932533766U) },
+		{ Z_Construct_UClass_UCustomActionSubsystem, UCustomActionSubsystem::StaticClass, TEXT("UCustomActionSubsystem"), &Z_Registration_Info_UClass_UCustomActionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomActionSubsystem), 888670505U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_3560523409(TEXT("/Script/CPP_2024"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_4269729647(TEXT("/Script/CPP_2024"),
 	Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

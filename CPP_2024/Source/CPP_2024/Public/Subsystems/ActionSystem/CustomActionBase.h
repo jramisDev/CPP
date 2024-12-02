@@ -16,6 +16,7 @@ class CPP_2024_API UCustomActionBase : public UObject
 protected:
 
 	virtual void DoAction(AActor* ActionInstigator);
+	virtual void EndAction(AActor* ActionInstigator);
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void RecieveDoAction(AActor* ActionInstigator);

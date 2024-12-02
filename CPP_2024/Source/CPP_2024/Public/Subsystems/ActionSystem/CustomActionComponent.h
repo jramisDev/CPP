@@ -21,10 +21,13 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-	void DoAction(const TSubclassOf<UCustomActionBase>& ActionClass) const;
+	void DoAction(const TSubclassOf<UCustomActionBase>& ActionClass);
+	void StopAction();
 
 private:
 	
 	UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess = true))
 	TArray<TSubclassOf<UCustomActionBase>> Actions;
+
+	TSubclassOf<UCustomActionBase> CurrentAction;
 };
