@@ -30,14 +30,41 @@ APredicateActor::APredicateActor()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
+void APredicateActor::PrintAfterTime()
+{
+	UE_LOG(LogTemp, Display, TEXT(""))
+}
+
+void SomeStuff()
+{
+	
+}
+
 void APredicateActor::TestFunction()
 {
-	int Score = 100;
+	GetWorld()->GetTimerManager().SetTimer(OutHandle, []()
+	{
+		UE_LOG(LogTemp, Display, TEXT("I Have Waited long enought!"))
+	}, 1.f, false);
 	
-	auto Lambda = [Score]()
+}
+
+void APredicateActor::SomeActorStuff()
+{
+}
+
+void APredicateActor::DoSomething(TFunction<void()> Func)
+{
+	Func();
+}
+
+void APredicateActor::BeginPlay()
+{
+	Super::BeginPlay();
+
+	auto Lambda = []()
 	{
 		
 	};
-
-	GetWorld()->GetTimerManager().SetTimer();
+	Lambda();
 }

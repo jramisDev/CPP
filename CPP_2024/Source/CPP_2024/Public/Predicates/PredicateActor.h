@@ -14,6 +14,15 @@ class CPP_2024_API APredicateActor : public AActor
 public:
 	APredicateActor();
 
+	void PrintAfterTime();
+	
 	void TestFunction();
 
+	void SomeActorStuff();
+
+	void DoSomething(TFunction<void()> Func);
+
+	FTimerHandle OutHandle;
+
+	virtual void BeginPlay() override;
 };
