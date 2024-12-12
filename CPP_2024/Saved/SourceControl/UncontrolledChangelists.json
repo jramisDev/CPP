@@ -5,22 +5,7 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/00_Clase/TemplateTesting/BP_TestTemplateActor.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/8/XE/ZRYECTUA0Q68QYLBPHDJSO.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/00_Clase/L_Test.umap",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/UClassTesting/BP_GeneralTesting.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/UClassTesting/BP_Spawner.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/UClassTesting/BP_Enemy.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/5/6C/ZDBZ6JX4DP438AUMI9OCN1.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/EY/XHAAJHF63BPUP9SZ14U419.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/F9/ON5C00CQT33XR0O0HBFL8U.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/0/PF/F932CKHD42FITQPPT3UU72.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/9B/IYQHIME8L1HILCOEQMK2Q6.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/01/PRWLWHCLQL6BJ9OB1O54K7.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/8/VF/HJG00931TTHKA4GVVTRU14.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/00_Clase/Actions/BP_Jump.uasset",
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/00_Clase/Actions/BP_Explode.uasset"
+				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/StarterContent/Architecture/Floor_400x400.uasset"
 			]
 		}
 	]

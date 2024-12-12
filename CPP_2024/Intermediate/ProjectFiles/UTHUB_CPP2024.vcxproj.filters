@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\UTHUB_CPP2024.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UTHUB_CPP2024.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\UTHUB_CPP2024Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\SubsystemBrowserPlugin">
+      <UniqueIdentifier>{BE2E264A-0C22-3647-9CF1-0EC8F2F6CA61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Source">
+      <UniqueIdentifier>{BF749DF0-3D01-3E0F-9E96-85C48596A31D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests">
+      <UniqueIdentifier>{570D0E33-80B1-39C3-9564-1373A1E2715D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests\SubsystemBrowserTests.Build.cs">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests</Filter>
+    </None>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests\SubsystemBrowserTests.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests\SubsystemBrowserTestsModule.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests\SubsystemBrowserTestsModule.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests\SubsystemBrowserTestSubsystem.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests\SubsystemBrowserTestSubsystem.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowserTests</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\SubsystemBrowserPlugin\SubsystemBrowserPlugin.uplugin">
+      <Filter>Plugins\SubsystemBrowserPlugin</Filter>
+    </None>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Config">
+      <UniqueIdentifier>{2BCF50CB-8775-3C26-89B2-99224BA7F8E3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SubsystemBrowserPlugin\Config\FilterPlugin.ini">
+      <Filter>Plugins\SubsystemBrowserPlugin\Config</Filter>
+    </None>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Resources">
+      <UniqueIdentifier>{3194B8B1-D37D-339F-9FBC-07F298A56B59}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SubsystemBrowserPlugin\Resources\Icon128.png">
+      <Filter>Plugins\SubsystemBrowserPlugin\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser">
+      <UniqueIdentifier>{203CAF2D-0508-33D4-9498-C96E05888F49}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowser.Build.cs">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </None>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowserFlags.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowserModule.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowserModule.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowserSettings.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowserSettings.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowserStyle.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowserStyle.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowserUtils.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\SubsystemBrowserUtils.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model">
+      <UniqueIdentifier>{8593A095-B9CE-31C5-AC49-1FF004DA12A9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\SubsystemBrowserCategory.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\SubsystemBrowserCategory.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\SubsystemBrowserColumn.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\SubsystemBrowserColumn.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\SubsystemBrowserDescriptor.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\SubsystemBrowserDescriptor.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\SubsystemBrowserModel.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\SubsystemBrowserModel.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\SubsystemBrowserSorting.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category">
+      <UniqueIdentifier>{DC11C9ED-27F9-3033-9295-4620B2F27AB0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_AudioEngine.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_AudioEngine.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_Editor.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_Editor.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_Engine.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_Engine.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_GameInstance.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_GameInstance.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_Player.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_Player.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_World.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category\SubsystemBrowserCategory_World.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Category</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column">
+      <UniqueIdentifier>{54FE16FF-EBD8-37AB-96AA-7F2D4BEC5D31}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column\SubsystemBrowserColumn_Config.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column\SubsystemBrowserColumn_Config.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column\SubsystemBrowserColumn_Module.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column\SubsystemBrowserColumn_Module.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column\SubsystemBrowserColumn_Name.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column\SubsystemBrowserColumn_Name.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column\SubsystemBrowserColumn_Plugin.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column\SubsystemBrowserColumn_Plugin.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\Model\Column</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI">
+      <UniqueIdentifier>{73AA36C5-24C5-3C8D-A0CE-2141C6DD25D3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemBrowserPanel.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemBrowserPanel.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemDetailsCustomizations.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemDetailsCustomizations.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemTableHeader.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemTableHeader.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemTableItem.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemTableItem.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemTableItemTooltip.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemTableItemTooltip.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemTreeWidget.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI\SubsystemTreeWidget.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemBrowser\UI</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor">
+      <UniqueIdentifier>{79A949EA-2579-3EFC-A5DE-29F5026E3028}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\SubsystemSettingsEditor.Build.cs">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor</Filter>
+    </None>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\SubsystemSettingsEditorModule.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\SubsystemSettingsEditorModule.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\SubsystemSettingsManager.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\SubsystemSettingsManager.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\UI">
+      <UniqueIdentifier>{2327E6AC-D2F7-3716-8888-3C11BCFD7AD8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\UI\SubsystemSettingsWidget.cpp">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\UI\SubsystemSettingsWidget.h">
+      <Filter>Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\UTHUB_CPP2024">
+      <UniqueIdentifier>{883119B2-D2E5-3B13-B16A-6D134A15A618}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024.Build.cs">
+      <Filter>Source\UTHUB_CPP2024</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024.cpp">
+      <Filter>Source\UTHUB_CPP2024</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024.h">
+      <Filter>Source\UTHUB_CPP2024</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024Character.cpp">
+      <Filter>Source\UTHUB_CPP2024</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024Character.h">
+      <Filter>Source\UTHUB_CPP2024</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024GameMode.cpp">
+      <Filter>Source\UTHUB_CPP2024</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024GameMode.h">
+      <Filter>Source\UTHUB_CPP2024</Filter>
+    </ClInclude>
+    <Filter Include="Source\UTHUB_CPP2024\Private">
+      <UniqueIdentifier>{DA40B1C0-67B3-31B0-BC2E-8E75E2048E39}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\GeneralTesting.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Spawner.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\TestTemplateActor.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\UTHUB_CPP2024\Private\Predicates">
+      <UniqueIdentifier>{ED7C0B7B-2B7B-3CEE-8D2C-B7ACF6C56D1F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Predicates\GenericUtils.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private\Predicates</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Predicates\PredicateActor.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private\Predicates</Filter>
+    </ClCompile>
+    <Filter Include="Source\UTHUB_CPP2024\Private\Subsistemas">
+      <UniqueIdentifier>{94D55275-B2D2-3722-BE05-4FD1ECB6B980}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Subsistemas\AttributeSubsystem.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private\Subsistemas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Subsistemas\SingletonTesting.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private\Subsistemas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Subsistemas\TestingSubsystem.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private\Subsistemas</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Private\Subsistemas\TestingSubsystem.h">
+      <Filter>Source\UTHUB_CPP2024\Private\Subsistemas</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Subsistemas\UTHUB_CPP2024GameInstance.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private\Subsistemas</Filter>
+    </ClCompile>
+    <Filter Include="Source\UTHUB_CPP2024\Private\Subsistemas\ActionSystem">
+      <UniqueIdentifier>{ED2355CF-946C-3F4B-AF09-D1C4C09A6040}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Subsistemas\ActionSystem\CustomActionBase.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private\Subsistemas\ActionSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Subsistemas\ActionSystem\CustomActionComponent.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private\Subsistemas\ActionSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Subsistemas\ActionSystem\CustomActionSubsystem.cpp">
+      <Filter>Source\UTHUB_CPP2024\Private\Subsistemas\ActionSystem</Filter>
+    </ClCompile>
+    <Filter Include="Source\UTHUB_CPP2024\Public">
+      <UniqueIdentifier>{6DAF5846-BEB2-3A2E-BDBC-6739AC06823C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\GeneralTesting.h">
+      <Filter>Source\UTHUB_CPP2024\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Spawner.h">
+      <Filter>Source\UTHUB_CPP2024\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\TestTemplateActor.h">
+      <Filter>Source\UTHUB_CPP2024\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\UTHUB_CPP2024\Public\Predicates">
+      <UniqueIdentifier>{3B4010E4-DAAB-30CF-8740-4E2218BC57D7}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Predicates\GenericUtils.h">
+      <Filter>Source\UTHUB_CPP2024\Public\Predicates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Predicates\PredicateActor.h">
+      <Filter>Source\UTHUB_CPP2024\Public\Predicates</Filter>
+    </ClInclude>
+    <Filter Include="Source\UTHUB_CPP2024\Public\Subsistemas">
+      <UniqueIdentifier>{39555313-3220-35AB-9496-CDF281B10CAC}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Subsistemas\AttributeSubsystem.h">
+      <Filter>Source\UTHUB_CPP2024\Public\Subsistemas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Subsistemas\SingletonTesting.h">
+      <Filter>Source\UTHUB_CPP2024\Public\Subsistemas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Subsistemas\UTHUB_CPP2024GameInstance.h">
+      <Filter>Source\UTHUB_CPP2024\Public\Subsistemas</Filter>
+    </ClInclude>
+    <Filter Include="Source\UTHUB_CPP2024\Public\Subsistemas\ActionSystem">
+      <UniqueIdentifier>{0E9D7A41-99F3-3B4A-8E47-B1D306E4EF1E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Subsistemas\ActionSystem\CustomActionBase.h">
+      <Filter>Source\UTHUB_CPP2024\Public\Subsistemas\ActionSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Subsistemas\ActionSystem\CustomActionComponent.h">
+      <Filter>Source\UTHUB_CPP2024\Public\Subsistemas\ActionSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Subsistemas\ActionSystem\CustomActionSubsystem.h">
+      <Filter>Source\UTHUB_CPP2024\Public\Subsistemas\ActionSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

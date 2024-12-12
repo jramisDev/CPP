@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\unrealeditor\\inc\\uthub_cpp2024\\uht\\predicateactor.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\x64\\uthub_cpp2024editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\uthub_cpp2024\\definitions.uthub_cpp2024.h",
+            "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\source\\uthub_cpp2024\\public\\predicates\\predicateactor.h",
+            "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\unrealeditor\\inc\\uthub_cpp2024\\uht\\predicateactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

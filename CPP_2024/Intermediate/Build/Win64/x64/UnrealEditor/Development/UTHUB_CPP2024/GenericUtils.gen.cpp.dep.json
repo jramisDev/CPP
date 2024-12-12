@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\unrealeditor\\inc\\uthub_cpp2024\\uht\\genericutils.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\x64\\uthub_cpp2024editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\uthub_cpp2024\\definitions.uthub_cpp2024.h",
+            "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\source\\uthub_cpp2024\\public\\predicates\\genericutils.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputaction.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputmodifiers.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputactionvalue.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputactionvalue.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputmodifiers.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputtriggers.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputtriggers.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputaction.generated.h",
+            "c:\\proyectos\\ut-hub\\tercero\\cmasmas\\cpp_2024\\intermediate\\build\\win64\\unrealeditor\\inc\\uthub_cpp2024\\uht\\genericutils.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
