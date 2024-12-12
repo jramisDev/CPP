@@ -327,7 +327,13 @@ struct Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// UFUNCTION(BlueprintCallable)\n// void DoActionAndWait(AActor* InActor, const TArray<>);\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/ActionSystem/CustomActionSubsystem.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "UFUNCTION(BlueprintCallable)\nvoid DoActionAndWait(AActor* InActor, const TArray<>);" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InActor;
@@ -404,7 +410,7 @@ struct Z_Construct_UClass_UCustomActionSubsystem_Statics
 		{ &Z_Construct_UFunction_UCustomActionSubsystem_DoActionSequence, "DoActionSequence" }, // 3039458286
 		{ &Z_Construct_UFunction_UCustomActionSubsystem_ExecuteMassiveAction, "ExecuteMassiveAction" }, // 1999606603
 		{ &Z_Construct_UFunction_UCustomActionSubsystem_RemoveActionFromActor, "RemoveActionFromActor" }, // 1034537848
-		{ &Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction, "StopCurrentAction" }, // 528148803
+		{ &Z_Construct_UFunction_UCustomActionSubsystem_StopCurrentAction, "StopCurrentAction" }, // 2582826534
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -462,10 +468,10 @@ UCustomActionSubsystem::~UCustomActionSubsystem() {}
 struct Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCustomActionSubsystem, UCustomActionSubsystem::StaticClass, TEXT("UCustomActionSubsystem"), &Z_Registration_Info_UClass_UCustomActionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomActionSubsystem), 888670505U) },
+		{ Z_Construct_UClass_UCustomActionSubsystem, UCustomActionSubsystem::StaticClass, TEXT("UCustomActionSubsystem"), &Z_Registration_Info_UClass_UCustomActionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomActionSubsystem), 3433065872U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_4269729647(TEXT("/Script/CPP_2024"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_2909443455(TEXT("/Script/CPP_2024"),
 	Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Proyectos_UT_HUB_Tercero_CMasMas_CPP_2024_Source_CPP_2024_Public_Subsystems_ActionSystem_CustomActionSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

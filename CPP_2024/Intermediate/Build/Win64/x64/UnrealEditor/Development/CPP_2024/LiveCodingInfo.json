@@ -1,5 +1,39 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.CPP_2024.cpp.obj": [
+			"AttributeSubsystem.gen.cpp.obj",
+			"CPP_2024Character.gen.cpp.obj",
+			"CPP_2024GameMode.gen.cpp.obj",
+			"CustomActionBase.gen.cpp.obj",
+			"CustomActionComponent.gen.cpp.obj",
+			"GeneralTesting.gen.cpp.obj",
+			"GI_Game.gen.cpp.obj",
+			"SingletonTesting.gen.cpp.obj",
+			"Spawner.gen.cpp.obj",
+			"StackActor.gen.cpp.obj",
+			"TestingSubsystem.gen.cpp.obj",
+			"TestTemplateActor.gen.cpp.obj",
+			"CPP_2024.cpp.obj",
+			"CPP_2024Character.cpp.obj",
+			"CPP_2024GameMode.cpp.obj",
+			"GeneralTesting.cpp.obj",
+			"Spawner.cpp.obj",
+			"StackActor.cpp.obj",
+			"CustomActionBase.cpp.obj",
+			"CustomActionComponent.cpp.obj",
+			"CustomActionSubsystem.cpp.obj",
+			"AttributeSubsystem.cpp.obj",
+			"GI_Game.cpp.obj",
+			"SingletonTesting.cpp.obj",
+			"TestingSubsystem.cpp.obj",
+			"TestTemplateActor.cpp.obj",
+			"CPP_2024.init.gen.cpp.obj",
+			"CustomActionSubsystem.gen.cpp.obj",
+			"GenericUtils.gen.cpp.obj",
+			"PredicateActor.gen.cpp.obj",
+			"GenericUtils.cpp.obj",
+			"PredicateActor.cpp.obj"
+		]
 	}
 }
