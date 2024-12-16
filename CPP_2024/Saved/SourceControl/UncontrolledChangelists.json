@@ -5,7 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/StarterContent/Architecture/Floor_400x400.uasset"
+				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/Async/BP_AsyncTest.uasset",
+				"C:/Proyectos/UT-HUB/Tercero/CMasMas/CPP_2024/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/IK/V981S3JFWHHCBH76QRAK2V.uasset"
 			]
 		}
 	]

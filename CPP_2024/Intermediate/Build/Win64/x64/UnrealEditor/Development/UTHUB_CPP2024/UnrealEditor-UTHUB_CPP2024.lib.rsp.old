@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-UTHUB_CPP2024.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UTHUB_CPP2024Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\UTHUB_CPP2024\Module.UTHUB_CPP2024.cpp.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\UTHUB_CPP2024\AsyncTestActor.cpp.obj"
+"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\UTHUB_CPP2024\Default.rc2.res"
+/OUT:"C:\Proyectos\UT-HUB\Tercero\CMasMas\CPP_2024\Intermediate\Build\Win64\x64\UnrealEditor\Development\UTHUB_CPP2024\UnrealEditor-UTHUB_CPP2024.lib"

@@ -27,13 +27,13 @@ void EmptyLinkFunctionForGeneratedCodeUTHUB_CPP2024_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x79964D04,
-				0x3470CAD8,
+				0xC79DF821,
+				0xA2067BEE,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_UTHUB_CPP2024.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_UTHUB_CPP2024.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_UTHUB_CPP2024(Z_Construct_UPackage__Script_UTHUB_CPP2024, TEXT("/Script/UTHUB_CPP2024"), Z_Registration_Info_UPackage__Script_UTHUB_CPP2024, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x79964D04, 0x3470CAD8));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_UTHUB_CPP2024(Z_Construct_UPackage__Script_UTHUB_CPP2024, TEXT("/Script/UTHUB_CPP2024"), Z_Registration_Info_UPackage__Script_UTHUB_CPP2024, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xC79DF821, 0xA2067BEE));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
