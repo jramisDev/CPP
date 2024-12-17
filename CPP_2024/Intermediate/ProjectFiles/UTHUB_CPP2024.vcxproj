@@ -688,11 +688,13 @@
     <ClInclude Include="..\..\Plugins\SubsystemBrowserPlugin\Source\SubsystemSettingsEditor\UI\SubsystemSettingsWidget.h"/>
     <None Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024.Build.cs"/>
     <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Async\AsyncTestActor.cpp" />
+    <ClCompile Include="..\..\Source\UTHUB_CPP2024\Private\Async\LevelBoundGeneration.cpp" />
     <ClCompile Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_3)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_3)</ForcedIncludeFiles>
     </ClCompile>
     <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Async\AsyncTestActor.h" />
+    <ClInclude Include="..\..\Source\UTHUB_CPP2024\Public\Async\LevelBoundGeneration.h" />
     <ClInclude Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024.h" />
     <ClCompile Include="..\..\Source\UTHUB_CPP2024\UTHUB_CPP2024Character.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_3)</AdditionalIncludeDirectories>
