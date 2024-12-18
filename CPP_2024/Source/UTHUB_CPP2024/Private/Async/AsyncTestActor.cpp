@@ -1,5 +1,7 @@
 ﻿#include "Async/AsyncTestActor.h"
 
+DEFINE_LOG_CATEGORY(LogAsyncExamples)
+
 AAsyncTestActor::AAsyncTestActor()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -14,6 +16,7 @@ void AAsyncTestActor::TestAsyncStuff()
 	Worker->GetTask().OnMassiveComputationFinished.BindLambda([this](int32 InTaskResult)
 	{
 		Ammo = InTaskResult;
+		UE_LOG(LogAsyncExamples, Display, TEXT("Task is ready"));
 	});
 
 	Worker->StartBackgroundTask();

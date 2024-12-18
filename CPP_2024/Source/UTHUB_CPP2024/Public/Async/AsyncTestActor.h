@@ -4,6 +4,9 @@
 #include "GameFramework/Actor.h"
 #include "AsyncTestActor.generated.h"
 
+DECLARE_LOG_CATEGORY_EXTERN(LogAsyncExamples, Display, All)
+
+
 class FAsyncTaskExample : public FNonAbandonableTask
 {
 	friend FAsyncTask<FAsyncTaskExample>;
